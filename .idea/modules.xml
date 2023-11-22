@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/codingbear.iml" filepath="$PROJECT_DIR$/.idea/codingbear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/codingbear.iml" filepath="$PROJECT_DIR$/.idea/modules/codingbear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/codingbear.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/codingbear.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/codingbear.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/codingbear.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/codingbear.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/codingbear.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/codingbear.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/codingbear.app.unitTest.iml" />
     </modules>
   </component>
 </project>
