@@ -1,0 +1,43 @@
+# 이 코드가 작동하는 코드
+import socket
+import time
+
+#host = '192.168.0.4' # Symbolic name meaning all available interfaces
+host = '172.16.111.127' # 본인의 ip 주소 입력 - 이더넷 어뎁터 (자신의 고유 IP 입력 )
+port = 9999 # Arbitrary non-privileged port
+ 
+server_sock = socket.socket(socket.AF_INET)
+server_sock.bind((host, port))
+server_sock.listen(3) # 동시 접속 3명 
+
+print("기다리는 중")
+client_sock, addr = server_sock.accept()
+
+print('Connected by', addr)
+
+# 서버에서 "안드로이드에서 서버로 연결요청" 한번 받음
+data = client_sock.recv(1024)
+print(data.decode("utf-8"), len(data))
+
+while(True):
+    data2 = int(input("보낼 값 : "))
+    #print(data2.encode())
+    #client_sock.send(data)
+    #client_sock.send(data2.to_bytes(4, byteorder='little'))
+    i = 2
+
+    # 값하나 보냄(사용자가 입력한 숫자)
+    client_sock.send(data2.to_bytes(4, byteorder='little'))
+
+    # 안드로이드에서 값 받으면 "하나받았습니다 : 숫자" 보낼 것 받음
+    data = client_sock.recv(1024)
+    print(data.decode("utf-8"), len(data))
+    
+    if(data2 == 99):
+        break
+
+# 연결끊겠다는 표시 보냄
+#i=99
+#client_sock.send(i.to_bytes(4, byteorder='little'))
+client_sock.close()
+server_sock.close()
