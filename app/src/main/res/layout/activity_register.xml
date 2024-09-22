@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/AppTheme.Actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_custom"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleMargin="0dp" />
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:bufferType="spannable"
+            android:fontFamily="@font/pretendard_medium"
+            android:lineSpacingExtra="5sp"
+            android:text="실비아에게 알려줄\n정보를 입력해주세요!"
+            android:textAppearance="@style/login_text"
+            android:textSize="21sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <!-- Name Input -->
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="이름"
+            android:textColor="#A5A7B2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/login_input"
+            android:ems="10"
+            android:fontFamily="@font/pretendard_medium"
+            android:hint="홍길동"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#A5A7B2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_label" />
+
+        <!-- Birthdate Input -->
+        <TextView
+            android:id="@+id/birth_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="생년월일"
+            android:textColor="#A5A7B2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_name" />
+
+        <EditText
+            android:id="@+id/input_birth"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/login_input"
+            android:ems="10"
+            android:fontFamily="@font/pretendard_medium"
+            android:hint="YYYYMMDD"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#A5A7B2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birth_label" />
+
+        <!-- Phone Number Input -->
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="전화호"
+            android:textColor="#A5A7B2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_birth" />
+
+        <EditText
+            android:id="@+id/input_phoneNo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/login_input"
+            android:ems="10"
+            android:fontFamily="@font/pretendard_medium"
+            android:hint="01012345678"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#A5A7B2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_label" />
+
+        <!-- Guardian Information Section -->
+        <TextView
+            android:id="@+id/guardian_info_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="보호자 정보"
+            android:textColor="#A5A7B2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_phoneNo" />
+
+        <!-- Guardian Name Input -->
+        <TextView
+            android:id="@+id/guardian_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="보호자 이름"
+            android:textColor="#A5A7B2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guardian_info_label" />
+
+        <EditText
+            android:id="@+id/input_guardianName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/login_input"
+            android:ems="10"
+            android:fontFamily="@font/pretendard_medium"
+            android:hint="홍길동"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#A5A7B2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guardian_name_label" />
+
+        <!-- Guardian Phone Number Input -->
+        <TextView
+            android:id="@+id/guardian_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:text="보호자 전화번호"
+            android:textColor="#A5A7B2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_guardianName" />
+
+        <EditText
+            android:id="@+id/input_guardianPhoneNo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/login_input"
+            android:ems="10"
+            android:fontFamily="@font/pretendard_medium"
+            android:hint="01012345678"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#A5A7B2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guardian_phone_label" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/register_btnnext"
+            android:enabled="true"
+            android:fontFamily="@font/pretendard_medium"
+            android:stateListAnimator="@null"
+            android:text="회원가입"
+            android:textColor="#FF8C00"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_guardianPhoneNo"
+            app:layout_constraintVertical_bias="0.874" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

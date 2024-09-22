@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ThirdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="81dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="4sp"
+        android:text="오늘 나의 감정을\n확인해볼까요?"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="-6sp"
+        android:text="소중한 내 감정을 챙겨줄 수 있어요"
+        android:textColor="#797C7B" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/onboarding_img2" />
+
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="338dp"
+    android:layout_height="217dp"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/pretendard_semibold"
+        android:gravity="center"
+        android:text="목소리 이름 작성하기"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/input01_2"
+        android:ems="10"
+        android:hint="이름 입력하기"
+        android:inputType="text"
+        android:paddingLeft="22dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="1"
+            android:background="#EEEEEE"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="작성 완료"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#EEEEEE"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="이전으로"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
