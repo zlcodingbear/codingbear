@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="81dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="4sp"
+        android:text="원하는 목소리로\n들려드릴게요"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="-6sp"
+        android:text="내 친구, 가족 목소리를 들을 수 있어요"
+        android:textColor="#797C7B" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/onboarding_img2" />
+
+</FrameLayout>

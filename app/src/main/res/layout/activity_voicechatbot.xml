@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".VoiceChatBotActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_custom"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMargin="0dp" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="-6sp"
+        android:text="목소리 변경하기"
+        android:textColor="#545456"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#FBFBFB"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatRecyclerView">
+
+        <Button
+            android:id="@+id/btn_voiceplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/btn_sttStart"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/chatbot_circle_button"
+            android:src="@drawable/mic_button02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:gravity="center"
+            android:text="마이크 버튼을 눌러\n실비아와 대화해볼까요?"
+            android:textColor="#FF8C00"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_emo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/ic_analysis"
+            android:fontFamily="@font/pretendard_medium"
+            android:paddingTop="18dp"
+            android:text="감정 분석"
+            android:textColor="#696969"
+            android:textSize="16sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/app_logo_xml"
+            android:fontFamily="@font/pretendard_medium"
+            android:paddingTop="3dp"
+            android:textColor="#696969"
+            android:textSize="16sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/ic_setting"
+            android:elevation="0dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="5.5dp"
+            android:text="설정"
+            android:textColor="#696969"
+            android:textSize="16sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cy_item02"
+    style="bold"
+    android:layout_width="match_parent"
+    android:layout_height="109dp"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/voicechoice_01"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@drawable/voicechoice_02"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/app_logo_xml" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/voice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:includeFontPadding="false"
+            android:text="수정 이름"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- voice_date TextView added -->
+        <TextView
+            android:id="@+id/voice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="날짜"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_select"
+                android:layout_width="94dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_corner_btn_next"
+                android:fontFamily="@font/pretendard_medium"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="선택하기" />
+
+            <Button
+                android:id="@+id/voice_delete"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_corner_stroke_gray01dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:text="삭제"
+                android:textColor="#999797" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_corner_stroke_gray01dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:text="재생"
+                android:textColor="#999797" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

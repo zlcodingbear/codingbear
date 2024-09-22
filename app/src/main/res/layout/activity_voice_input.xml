@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:orientation="horizontal"
+    tools:context=".VoiceInputActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/voice_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBFBFB"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="-6sp"
+        android:text="목소리 변경하기"
+        android:textColor="#545456"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/voice_toolbar1"
+        app:layout_constraintEnd_toEndOf="@+id/voice_toolbar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/voice_toolbar1" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="0dp"
+        android:layout_height="118dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F1F1F1"
+        app:layout_constraintTop_toBottomOf="@+id/voice_toolbar1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pretendard_semibold"
+        android:gravity="top"
+        android:text="원하는 목소리를\n직접 등록해보세요!"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voice_toolbar1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/group1"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voice_toolbar1" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="119dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/input01_1"
+        android:fontFamily="@font/pretendard_semibold"
+        android:text="등록 방법 보기"
+        android:textColor="#4BC8AA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/pretendard_semibold"
+        android:gravity="top"
+        android:text="1번째 문장 읽어보기"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/input01_2"
+        android:fontFamily="@font/pretendard_semibold"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="2sp"
+        android:paddingTop="57dp"
+        android:paddingBottom="57dp"
+        android:text="꽁꽁 얼어붙은 \n한강 위로 고양이가 \n걸어다닙니다."
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.5"
+        android:fontFamily="@font/pretendard_semibold"
+        android:gravity="center"
+        android:text="위에 나타난 문장을 읽어주세요."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_weight="0.5"
+        android:fontFamily="@font/pretendard_regular"
+        android:gravity="center"
+        android:text="마이크 버튼을 꾹 누르고\n사진에 있는 문장을 천천히 읽어주세요."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/ic_play_arrow"
+            android:fontFamily="@font/pretendard_medium"
+            android:paddingTop="15dp"
+            android:text="다시 말하기"
+            android:textColor="#696969"
+            android:textSize="17sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/ic_send"
+            android:fontFamily="@font/pretendard_medium"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="확인"
+            android:textColor="#696969"
+            android:textSize="17sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_record"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="120dp"
+        android:src="@drawable/mic_button"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

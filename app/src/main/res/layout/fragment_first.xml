@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="81dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="4sp"
+        android:text="실비아는\n언제나 옆에 있어요"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/pretendard_medium"
+        android:lineSpacingExtra="-6sp"
+        android:text="당신의 말은 저에게 큰 의미를 전달해요"
+        android:textColor="#797C7B" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="232dp"
+        android:src="@drawable/onboarding_img1" />
+
+</FrameLayout>

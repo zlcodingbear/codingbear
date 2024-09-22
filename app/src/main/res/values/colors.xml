@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="userMessageBackground">#FFEB3B</color>
+    <color name="botMessageBackground">#E0E0E0</color>
+    <!-- 기존 색상 정의가 있을 경우 유지 -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <!-- 필요한 다른 색상 추가 -->
+    <color name="colorPrimaryLight">#BB86FC</color>
+    <color name="colorAccentLight">#03DAC5</color>
+    <color name="disabled_button_color">#D3D3D3</color> <!-- 비활성화 상태 색상 (회색) -->
+    <color name="enabled_button_color">#FF8C00</color> <!-- 활성화 상태 색상 (주황색) -->
+</resources>

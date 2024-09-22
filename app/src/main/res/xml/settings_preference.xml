@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:key="key_memberinfo"
+        android:title="회원정보 확인">
+
+        <Preference
+            android:key="key_user_info_change"
+            android:title="회원정보 수정"/>
+
+    </PreferenceScreen>
+
+    <PreferenceCategory android:title="목소리">
+        <!-- 목소리 수정 -->
+        <PreferenceScreen
+            android:key="key_tts_setting"
+            android:title="목소리 수정">
+            <Preference
+                android:layout="@layout/activity_voice_input">
+
+            </Preference>
+        </PreferenceScreen>
+
+        <!-- 사용 방법 보기 -->
+        <PreferenceScreen
+            android:key="key_tts_info"
+            android:title="사용 방법 보기">
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="알림설정">
+        <SwitchPreference
+            android:key="key_message_alarm"
+            android:title="어플 알림 받기"/>
+
+        <SwitchPreference
+            android:key="key_analysis_alarm"
+            android:title="분석 결과 받기"
+            android:summary="감정 분석 결과를 수신하는 기능을 켜거나 끌 수 있습니다."/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

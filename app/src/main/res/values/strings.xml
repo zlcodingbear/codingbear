@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Silvia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+        <string name="voice_play">듣기</string>
+    <string name="send">전송</string>
+    <string name="emotion_analysis">감정 분석</string>
+    <string name="app_logo">앱 로고</string>
+    <string name="settings">설정</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_voice">Play Voice</string>
+</resources>
